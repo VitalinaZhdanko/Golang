@@ -7,7 +7,6 @@ import (
 )
 
 func main() {
-
 	var number int
 	fmt.Print("Enter the number of elements in the array: ")
 	fmt.Scan(&number)
@@ -20,9 +19,9 @@ func main() {
 	for i := 0; i < number; i++ {
 		slice[i] = rand.Intn(100)
 	}
+
 	fmt.Println(slice)
 	fmt.Println(median(slice))
-
 }
 
 func median(slice []int) float64 {
@@ -33,5 +32,4 @@ func median(slice []int) float64 {
 	}
 	fmt.Println("Sorted odd array: ", slice)
 	return float64(slice[len(slice)/2])
-
 }
