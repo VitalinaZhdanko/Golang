@@ -27,9 +27,9 @@ func TestSquare(t *testing.T) {
 			return
 		}
 		if res != item.resEndPoint {
-			t.Errorf("Add() with args %v : FAILED, expected %v but got value '%v'", item.inputDate, item.resEndPoint, res)
+			t.Errorf("End() with args %v : FAILED, expected %v but got value '%v'", item.inputDate, item.resEndPoint, res)
 		} else {
-			t.Logf("Add() with args %v : PASSED, expected %v and got value '%v'", item.inputDate, item.resEndPoint, res)
+			t.Logf("End() with args %v : PASSED, expected %v and got value '%v'", item.inputDate, item.resEndPoint, res)
 		}
 
 	}
@@ -43,9 +43,9 @@ func TestPerimeter(t *testing.T) {
 			return
 		}
 		if res != item.resPerimeter {
-			t.Errorf("Add() with args %v : FAILED, expected %v but got value '%v'", item.side, item.resPerimeter, res)
+			t.Errorf("Perimeter() with args %v : FAILED, expected %v but got value '%v'", item.side, item.resPerimeter, res)
 		} else {
-			t.Logf("Add() with args %v : PASSED, expected %v and got value '%v'", item.side, item.resPerimeter, res)
+			t.Logf("Perimeter() with args %v : PASSED, expected %v and got value '%v'", item.side, item.resPerimeter, res)
 		}
 
 	}
@@ -59,9 +59,9 @@ func TestArea(t *testing.T) {
 			return
 		}
 		if res != item.resArea {
-			t.Errorf("Add() with args %v : FAILED, expected %v but got value '%v'", item.side, item.resArea, res)
+			t.Errorf("Area() with args %v : FAILED, expected %v but got value '%v'", item.side, item.resArea, res)
 		} else {
-			t.Logf("Add() with args %v : PASSED, expected %v and got value '%v'", item.side, item.resArea, res)
+			t.Logf("Area() with args %v : PASSED, expected %v and got value '%v'", item.side, item.resArea, res)
 		}
 
 	}
